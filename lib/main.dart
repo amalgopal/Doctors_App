@@ -1,4 +1,4 @@
-import 'package:doctors_app_project/application/features/home/home_screen.dart';
+import 'package:doctors_app_project/application/core/widgets/navigatiobar/navigationbar.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  const MaterialApp(
-      home: ScreenHome(),
+      debugShowCheckedModeBanner: false,
+      home: BottomNavigationBarPage(),
     );
   }
+  
 }
